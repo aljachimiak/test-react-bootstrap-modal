@@ -59,3 +59,24 @@ $ yarn install
 ```
 $ yarn start
 ```
+
+### Shim insterted as fix
+In App.js, adding a shim to the Modal will fix the issue:
+```
+import {
+  PageHeader
+  // , Modal
+} from 'react-bootstrap';
+
+import Modal from './modal-shim';
+```
+
+You can easily swap back to the broken state by commenting and uncommenting the appropriate lines:
+```
+import {
+  PageHeader
+  , Modal
+} from 'react-bootstrap';
+
+// import Modal from './modal-shim';
+```
