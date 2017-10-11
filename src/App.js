@@ -3,9 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 import {
-  PageHeader,
-  Modal
+  PageHeader
+  // , Modal
 } from 'react-bootstrap';
+
+import Modal from './modal-shim';
 
 class App extends Component {
   render() {
